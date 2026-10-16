@@ -328,7 +328,7 @@ record HasBinaryProducts {lo la l≈} (C : Category lo la l≈)
   open Iso.Build C
   open ≈-Reasoning
 
-  infixr 2 _×_ _×′_ ⟨_×_⟩ ⟨_,_⟩
+  infixr 2 _×_ _×′_
 
   field
     _×′_ : ∀ A B → BinaryProduct C A B
