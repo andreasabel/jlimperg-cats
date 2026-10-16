@@ -85,7 +85,7 @@ module Build {lo la l≈} (Cat : Category lo la l≈) where
 
 
   nullaryProduct-Terminal : (P : Product {I = ⊥} (λ())) → IsTerminal (P ᴼ)
-  nullaryProduct-Terminal P X with isProduct P {X = X} λ()
+  nullaryProduct-Terminal P X with isProduct P {X = X} (λ())
   ... | ∃!-intro arr _ unique = ∃!-intro arr _ (λ _ → unique λ())
 
 
